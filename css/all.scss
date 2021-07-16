@@ -4,12 +4,18 @@
 
 *,*::after,*::before {
     box-sizing: border-box;
+    // outline: 1px solid red;
    
 }
 
 img {
     width: 100%;
 }
+
+
+// .material-icons.md-200 { font-size: 160px; }
+
+
 
 
 .nav-list-container {
@@ -119,15 +125,32 @@ img {
 }
 
 .selfIntro {
-    padding: 96px;
     .row {
         justify-content: center;
-        .selfIntro-img-container,.selfIntro-text-container {
-            padding: 64px;
+    }
+}
 
-        }
+
+.skills {
+    .material-icons {
+        &.md-160 { font-size: 160px; };
+        &.md-150 { font-size: 150px; };
 
     }
+    .material-icons-computer {
+        color: #00AAFF;     
+    }
+
+    .material-icons-research {
+        padding: 4px 0 4px 0;
+        color: #F78FB3;   
+    }
+
+    .material-icons-language {
+        color:#7dd6cf;
+        color:#FFCC00;
+    }
+
 }
     
   
