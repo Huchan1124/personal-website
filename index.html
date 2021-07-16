@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/all.css">
 </head>
 <body>
+  <section class="tri-animation-section"> 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class=" container ">
           <div>
@@ -25,11 +26,11 @@
                 </li>
                 <li><a class="nav-link" href="#selfIntro">簡歷</a>
                 </li>
-                <li><a class="nav-link" href="#">技能</a>
+                <li><a class="nav-link" href="#skills">技能</a>
                 </li>
-                <li><a class="nav-link" href="#">經歷</a>
+                <li><a class="nav-link" href="#workExp">經歷</a>
                 </li>
-                <li><a class="nav-link" href="#">作品</a>
+                <li><a class="nav-link" href="#works">作品</a>
                 </li>
                 <li><a class="nav-link" href="#">聯絡方式</a>
             </ul>
@@ -51,13 +52,13 @@
        </div>
     </div>
     <div class="selfIntro p-7">
-      <div class="container">
+      <div id="selfIntro" class="container">
        <div class="row">
         <div class="selfIntro-img-container p-md-6 col-12 col-md-6">
           <img src="./img/self-intro-img.JPG" alt="personal-photo" class="selfIntro-img">
         </div>
         <div class="selfIntro-text-container p-md-6 col-12 col-md-6">
-          <h2 id="selfIntro">簡歷</h2>
+          <h2 >簡歷</h2>
           <p>嗨!我是HUCHAN!
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, voluptatum!
           </p>
@@ -65,7 +66,7 @@
       </div>
       </div>
     </div>
-    <div class="skills container text-center ">
+    <div id="skills" class="skills container text-center ">
       <h2 class="p-md-6">技能</h2>
         <div class="skills-container ">
           <ul class="row list-unstyled">
@@ -93,9 +94,9 @@
           </ul>
         </div>
     </div>
-    <div class="work-exp container text-center">
+    <div id="workExp"  class="workExp container text-center">
       <h2 class="p-md-6">工作經歷</h2>
-      <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion  container" id="accordionPanelsStayOpenExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="panelsStayOpen-headingOne">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
@@ -177,9 +178,50 @@
       </div> -->
 
     </div>
+    <div  id="works" class="works container text-center">
+      <h2 class="p-md-5">作品</h2>
+      <ul class="works-nav p-md-6">
+        <li class="btn border rounded-pill"><a href="" >全部作品</a></li>
+        <li class="btn border rounded-pill"><a href="" >網頁作品</a></li>
+        <li class="btn border rounded-pill"><a href="" >應用創作</a></li>
+        <li class="btn border rounded-pill"><a href="" >影片作品</a></li>
+      </ul>
+      <div class="works-items row justify-content-evenly ">
+        <div class="card col-3" >
+          <img src="https://picsum.photos/id/684/600/400 " class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
 
+        <div class="card col-3" >
+          <img src="https://picsum.photos/id/684/600/400 " class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
 
+        <div class="card col-3" >
+          <img src="https://picsum.photos/id/684/600/400 " class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+
+      
+    </div>
+
+      
+       </section>
+      
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="./all.js"></script>
 </body>
 </html>

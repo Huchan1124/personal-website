@@ -12915,10 +12915,71 @@ textarea.form-control-lg {
           box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 img {
   width: 100%;
 }
 
+a {
+  text-decoration: none !important;
+}
+
+tri-animation-section {
+  height: 100%;
+}
+
+small, .small {
+  width: 0;
+  height: 0;
+  border: solid;
+  position: absolute;
+  z-index: -100;
+  pointer-events: none;
+  border-color: transparent transparent #fff transparent;
+  -webkit-animation: animate 5s linear infinite;
+          animation: animate 5s linear infinite;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: scale(0) translateY(0) rotate(0deg);
+            transform: scale(0) translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0.5) translateY(-500%) rotate(190deg);
+            transform: scale(0.5) translateY(-500%) rotate(190deg);
+    opacity: 0;
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform: scale(0) translateY(0) rotate(0deg);
+            transform: scale(0) translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0.5) translateY(-500%) rotate(190deg);
+            transform: scale(0.5) translateY(-500%) rotate(190deg);
+    opacity: 0;
+  }
+}
 .nav-list-container {
   display: -webkit-box;
   display: -ms-flexbox;
