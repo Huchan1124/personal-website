@@ -7,6 +7,11 @@
    
 }
 
+img {
+    width: 100%;
+}
+
+
 .nav-list-container {
     // outline: solid 1px red;
     display: flex;
@@ -111,6 +116,18 @@
    
  
 
+}
+
+.selfIntro {
+    padding: 96px;
+    .row {
+        justify-content: center;
+        .selfIntro-img-container,.selfIntro-text-container {
+            padding: 64px;
+
+        }
+
+    }
 }
     
   

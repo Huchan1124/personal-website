@@ -12027,6 +12027,10 @@ textarea.form-control-lg {
           box-sizing: border-box;
 }
 
+img {
+  width: 100%;
+}
+
 .nav-list-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12132,4 +12136,16 @@ textarea.form-control-lg {
   height: 30px;
   border: 0.5px solid #000;
   background: #000;
+}
+
+.selfIntro {
+  padding: 96px;
+}
+.selfIntro .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.selfIntro .row .selfIntro-img-container, .selfIntro .row .selfIntro-text-container {
+  padding: 64px;
 }
