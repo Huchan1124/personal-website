@@ -2,18 +2,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 
 
+
+
 *,*::after,*::before {
     box-sizing: border-box;
     // outline: 1px solid red;
+    
    
 }
 
-body {
-    overflow-x:hidden;
-}
+html {
+    overflow-y: scroll;
+  }
+  
+  :root {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  
+  :root body {
+    position: absolute;
+  }
+  
+  body {
+    width: 100vw;
+    overflow: hidden;
+  }
+
+
 
 img {
     width: 100%;
+    height:auto;
 }
 
 
@@ -22,7 +42,8 @@ a {
 }
 
 .tri-animation-section{
-    height: 100%;
+    max-width:100%;
+    height: auto;
   
     }
 
@@ -72,7 +93,8 @@ small {
 }
 
 .header {
-    width: 100vw;
+    // outline: solid 1px red;
+    max-width: 100vw;
     height: 80vh;
     display: flex;
     justify-content: center;
@@ -119,6 +141,23 @@ small {
     
 
 }
+
+@media (max-width:992px){
+    .header-titleStyle{
+        font-size: 800%;
+    }
+  
+}
+
+
+@media (max-width:767px){
+    .header-titleStyle{
+        font-size: 500%;
+    }
+   
+}
+
+
 
 
 @keyframes sizeChange{
@@ -191,8 +230,7 @@ small {
 }
     
   
- 
-    
+
    
     
     

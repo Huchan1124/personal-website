@@ -18,8 +18,8 @@ function createTriangle(){
     triangle.style.borderLeftWidth= `${30+ size}px`;
     
     //隨機生成起始位置
-    triangle.style.top = `${Math.random()* document.body.offsetHeight}px`;
-    triangle.style.left =`${Math.random()* document.body.offsetWidth}px`;
+    triangle.style.top = `${Math.random()* document.body.clientHeight}px`;
+    triangle.style.left =`${Math.random()* document.body.clientWidth}px`;
  
    
     //陣列取值 隨機生成顏色
@@ -38,3 +38,4 @@ function createTriangle(){
 setInterval(createTriangle,150);
 
 
+new WOW().init();

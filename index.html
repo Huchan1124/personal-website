@@ -8,9 +8,13 @@
     <title>Huchan's Portfolio</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./css/all.css">
 </head>
-<body>
+<body >
   <section class="tri-animation-section"> 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class=" container ">
@@ -32,12 +36,14 @@
                 </li>
                 <li><a class="nav-link" href="#works">作品</a>
                 </li>
-                <li><a class="nav-link" href="#">聯絡方式</a>
+                <li><a class="nav-link" href="#autobio">自傳</a>
+                </li>
+                <li><a class="nav-link" href="#contact">聯絡方式</a>
             </ul>
           </div>
         </div>
       </nav>
-    <div class=" header  header-titleStyle">
+    <div class=" header  header-titleStyle ">
         <div>H</div>
         <div>U</div>
         <div>C</div>
@@ -55,7 +61,7 @@
       <div id="selfIntro" class="container">
        <div class="row">
         <div class="selfIntro-img-container p-md-6 col-12 col-md-6">
-          <img src="./img/self-intro-img.JPG" alt="personal-photo" class="selfIntro-img">
+          <img src="./img/self-intro-img.JPG" alt="personal-photo" class="selfIntro-img wow animate__animated animate__slideInUp " data-wow-offset="100" >
         </div>
         <div class="selfIntro-text-container p-md-6 col-12 col-md-6">
           <h2 >簡歷</h2>
@@ -69,22 +75,22 @@
     <div id="skills" class="skills container text-center ">
       <h2 class="p-md-6">技能</h2>
         <div class="skills-container ">
-          <ul class="row list-unstyled">
-            <li class="card col-12 col-md-4 ">
+          <ul class="row list-unstyled justify-content-evenly">
+            <li class="card col-12 col-md-3 m-3">
               <span class="material-icons material-icons-computer md-160 " >
                 code
                 </span>
               <h3>程式</h3>
               <p class="h6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, eveniet. </p>
             </li>
-            <li class="card col-12 col-md-4  ">
+            <li class="card col-12 col-md-3 m-3  ">
               <span class="material-icons material-icons-research md-150 " >
                 travel_explore
                 </span>
               <h3>研究</h3>
               <p class="h6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, eveniet. </p>
             </li>
-            <li class="card col-12 col-md-4  ">
+            <li class="card col-12 col-md-3 m-3  ">
               <span class="material-icons material-icons-language md-160 " >
                 translate
                 </span>
@@ -179,6 +185,7 @@
 
     </div>
     <div  id="works" class="works container text-center">
+
       <h2 class="p-md-5">作品</h2>
       <ul class="works-nav p-md-6">
         <li class="btn border rounded-pill"><a href="" >全部作品</a></li>
@@ -186,8 +193,9 @@
         <li class="btn border rounded-pill"><a href="" >應用創作</a></li>
         <li class="btn border rounded-pill"><a href="" >影片作品</a></li>
       </ul>
-      <div class="works-items row justify-content-evenly ">
-        <div class="card col-3" >
+      <div class="container">
+      <div class="works-items row justify-content-evenly">
+        <div class="card col-md-3 m-3" >
           <img src="https://picsum.photos/id/684/600/400 " class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
@@ -196,7 +204,7 @@
           </div>
         </div>
 
-        <div class="card col-3" >
+        <div class="card col-md-3 m-3" >
           <img src="https://picsum.photos/id/684/600/400 " class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
@@ -205,7 +213,7 @@
           </div>
         </div>
 
-        <div class="card col-3" >
+        <div class="card col-md-3 m-3" >
           <img src="https://picsum.photos/id/684/600/400 " class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
@@ -214,14 +222,164 @@
           </div>
         </div>
 
+        <div class="card col-md-3 m-3" >
+          <img src="https://picsum.photos/id/684/600/400 " class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+
+        <div class="card col-md-3 m-3" >
+          <img src="https://picsum.photos/id/684/600/400 " class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+
+        <div class="card col-md-3 m-3" >
+          <img src="https://picsum.photos/id/684/600/400 " class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
       
     </div>
+
+    </div>
+
+    <div id="autobio"  class="autobio container text-center">
+        <h2 class="p-md-6">自傳</h2>
+        <div class="accordion  container" id="accordionPanelsStayOpenExample">
+          <!-- 1 -->
+          <div class="accordion-item ">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                1.自述
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+              <div class="accordion-body text-start">
+                <p>我是羅仟雅，大學就讀清華大學中國文學系，研究所畢業於國立臺中教育大學數位內容
+                  科技學系。求學期間，即對多媒體與數位內容轉譯感到莫大興趣，並自學設計軟體以及影音
+                  剪輯，同時亦於系上畢業製作擔任攝影組組長，主導畢製攝影相關事務。過去也在北京朝陽
+                  規劃藝術館擔任暑期實習生，協助該館做北京藝術園區、設施(如 798 藝術區、僑福芳草地)
+                  的調查研究報告。</p>
+              </div>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+              <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+               2.數位科技新認知，踏入數位學習領域
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingTwo">
+              <div class="accordion-body text-start">
+                <p>於北京清華大學視覺傳達設計系交換的那年， 受到多媒體學系學生的啟蒙，於回台後決
+                  定至臺中教育大學修習數位內容與科技學系研究所的課程，在校期間主動擔任系上教授之科
+                  技部計畫兼任助理，在過程中對於數位學習領域研究有了初步認識，而後更運用此經驗結合
+                  資訊科技的力量與語文教育，發展個人之碩士論文研究。以聲韻覺識理論為基礎， 運用
+                  Construct3 軟體設計語文遊戲輔助幼童在注音方面的學習，透過悅趣式學習讓孩童們更喜歡
+                  學習語文課程。</p>
+              </div>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true" aria-controls="panelsStayOpen-collapseThree">
+                3.初任行政崗位，培養謹慎、耐心、溝通力
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingThree">
+              <div class="accordion-body text-start">
+                <p>研究所畢業後，因緣際會我擔任臺中教育大學理學院行政專員一職。在此職位中我運用
+                  自身的中文專業在公文及會議報告上，以及過去於社團活動中培養的活動策畫與執行力來辦
+                  理及規畫許多校內外活動及座談。在舉辦對外的活動時相較於過去舉辦營隊活動有更多的突
+                  發狀況， 也因此訓練了我臨機應變的能力，另外在每次活動結束後，也時時檢討與反省，使
+                  下一次的活動規劃能更為完美。</p>
+              </div>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="true" aria-controls="panelsStayOpen-collapseFour">
+                4.重回研究領域，規劃線上平台UI介面，提升平台易用性與學習者學習動機
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingFour">
+              <div class="accordion-body text-start">
+                <p>因為對教育科技研究領域仍感興趣，同時也想更進一步磨練自身的研究能力。故毅然 決
+                  然北上至國立臺灣師範大學擔任科技部線上論證研究計畫 碩士級研究助理一職。在此職位
+                  中，我運用過去研究生時期的研究訓練，重新評估平台的易用性，並規劃新的UI介面，同時引
+                  入線上作業檢核機制。在與學習者的深度訪談中，他們表示新的UI介面資訊清晰、明確，且線
+                  上檢核機制亦促使他們的學習動機以及作業完成率的提升。</p>
+              </div>
+            </div>
+          </div>
+            <!-- 5 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="true" aria-controls="panelsStayOpen-collapseFive">
+                 5. 匯結人文與科技，創造多元跨域新視界
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingFive">
+                <div class="accordion-body text-start">
+                  <p>學術知識不只專屬於學者，而是能推廣給希望個人數位內容與學習科技的研究經驗，我相當認同此理念。近年來積極將學術研究知識
+                    轉譯成大眾較易吸收的內容，並在大眾研究新知推廣領域盡一份心力。
+                    </p>
+                </div>
+              </div>
+            </div>
+
+        
+        
+        
+        </div>
+      </div>
+    <div id="contact" class="contact container text-center pb-6">
+      <h2 class="p-md-6">聯絡方式</h2>
+    <form action="">
+      <div class="contact-items row justify-content-center text-start" >
+      <div class="col-9 col-md-6">
+      <div class="mb-3">
+        <label for="contactInput-name" class="form-label">姓名 </label>
+        <input type="text" class="form-control" id="contactInput-name" placeholder="請輸入姓名">
+      </div>
+      <div class="mb-3">
+        <label for="contactInput-email" class="form-label">Email</label>
+        <input type="text" class="form-control" id="contactInput-email" placeholder="請輸入Email">
+      </div>
+      <div class="mb-3">
+        <label for="contactInput-textarea" class="form-label">留言</label>
+        <textarea class="form-control" id="contactInput-textarea"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary">送出</button>
+    </div>
+    </div>
+   </form>
+   <!--  -->
+
+    </div>
+     
 
       
        </section>
       
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
       <script src="./all.js"></script>
 </body>
 </html>

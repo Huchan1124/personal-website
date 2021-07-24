@@ -12915,20 +12915,36 @@ textarea.form-control-lg {
           box-sizing: border-box;
 }
 
-body {
+html {
+  overflow-y: scroll;
+}
+
+:root {
+  overflow-y: auto;
   overflow-x: hidden;
+}
+
+:root body {
+  position: absolute;
+}
+
+body {
+  width: 100vw;
+  overflow: hidden;
 }
 
 img {
   width: 100%;
+  height: auto;
 }
 
 a {
   text-decoration: none !important;
 }
 
-tri-animation-section {
-  height: 100%;
+.tri-animation-section {
+  max-width: 100%;
+  height: auto;
 }
 
 small, .small {
@@ -12990,7 +13006,7 @@ small, .small {
 }
 
 .header {
-  width: 100vw;
+  max-width: 100vw;
   height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13036,6 +13052,16 @@ small, .small {
           transform: translateY(-30%);
 }
 
+@media (max-width: 992px) {
+  .header-titleStyle {
+    font-size: 800%;
+  }
+}
+@media (max-width: 767px) {
+  .header-titleStyle {
+    font-size: 500%;
+  }
+}
 @-webkit-keyframes sizeChange {
   0% {
     -webkit-transform: scale(1);
@@ -13050,7 +13076,6 @@ small, .small {
             transform: scale(1);
   }
 }
-
 @keyframes sizeChange {
   0% {
     -webkit-transform: scale(1);
