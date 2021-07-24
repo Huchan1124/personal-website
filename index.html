@@ -11,7 +11,10 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    >
+
+
+
     <link rel="stylesheet" href="./css/all.css">
 </head>
 <body >
@@ -28,7 +31,7 @@
             <ul class=" nav-list navbar-nav">
                 <li><a class="nav-link active" aria-current="page" href="#">首頁</a>
                 </li>
-                <li><a class="nav-link" href="#selfIntro">簡歷</a>
+                <li><a class="nav-link " href="#selfIntro">簡歷</a>
                 </li>
                 <li><a class="nav-link" href="#skills">技能</a>
                 </li>
@@ -59,50 +62,81 @@
     </div>
     <div class="selfIntro p-7">
       <div id="selfIntro" class="container">
-       <div class="row">
-        <div class="selfIntro-img-container p-md-6 col-12 col-md-6">
+       <div class="row ">
+        <div class="selfIntro-img-container p-md-6 col-12 col-md-6 ">
           <img src="./img/self-intro-img.JPG" alt="personal-photo" class="selfIntro-img wow animate__animated animate__slideInUp " data-wow-offset="100" >
         </div>
-        <div class="selfIntro-text-container p-md-6 col-12 col-md-6">
+        <div class=" selfIntro-text-container p-md-6 col-12 col-md-6 wow animate__animated animate__slideInUp">
           <h2 >簡歷</h2>
-          <p>嗨!我是HUCHAN!
+          <p >嗨!我是HUCHAN!
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, voluptatum!
           </p>
         </div>
       </div>
       </div>
     </div>
-    <div id="skills" class="skills container text-center ">
+    <div id="skills" class="skills container text-center wow animate__animated animate__slideInUp ">
       <h2 class="p-md-6">技能</h2>
         <div class="skills-container ">
           <ul class="row list-unstyled justify-content-evenly">
+            <!-- 1 -->
             <li class="card col-12 col-md-3 m-3">
-              <span class="material-icons material-icons-computer md-160 " >
-                code
-                </span>
-              <h3>程式</h3>
-              <p class="h6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, eveniet. </p>
+              <div class="front ">
+                <span class="material-icons material-icons-computer md-160 " >
+                  code
+                  </span>
+                <h3>程式</h3>
+                <p class="h6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, eveniet. </p>
+              </div>
+              <div class="back">
+                <span class="material-icons material-icons-computer md-160 " >
+                  code
+                  </span>
+                <h3>程式背面</h3>
+                <p class="h6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, eveniet. </p>
+              </div>
             </li>
+            <!-- 2 -->
             <li class="card col-12 col-md-3 m-3  ">
+              <div class="front ">
               <span class="material-icons material-icons-research md-150 " >
                 travel_explore
                 </span>
               <h3>研究</h3>
               <p class="h6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, eveniet. </p>
+              </div>
+              <div class="back">
+                <span class="material-icons material-icons-research md-150 " >
+                  travel_explore
+                  </span>
+                <h3>研究背面</h3>
+                <p class="h6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, eveniet. </p>
+              </div>
             </li>
+            <!-- 3 -->
             <li class="card col-12 col-md-3 m-3  ">
+              <div class="front">
               <span class="material-icons material-icons-language md-160 " >
                 translate
                 </span>
               <h3>語言</h3>
               <p class="h6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, eveniet. </p>
+              </div>
+              <div class="back">
+                <span class="material-icons material-icons-language md-160 " >
+                  translate
+                  </span>
+                <h3>語言背面</h3>
+                <p class="h6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, eveniet. </p>
+              </div>
+            
             </li>
           </ul>
         </div>
     </div>
-    <div id="workExp"  class="workExp container text-center">
+    <div id="workExp"  class="workExp container text-center  wow animate__animated animate__slideInUp">
       <h2 class="p-md-6">工作經歷</h2>
-      <div class="accordion  container" id="accordionPanelsStayOpenExample">
+      <div class="accordion  container " id="accordionPanelsStayOpenExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="panelsStayOpen-headingOne">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
@@ -111,7 +145,7 @@
           </h2>
           <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
             <div class="accordion-body text-start">
-              <h3 class="h6">「臺灣大學生線上論證之研究：提升全球素養能力之跨領域整合與比較－子計畫四：培養核心素養的學習模式－教育
+              <h3 class="h6 ">「臺灣大學生線上論證之研究：提升全球素養能力之跨領域整合與比較－子計畫四：培養核心素養的學習模式－教育
                 領域大學生如何透過線上論證培養媒體素養能力」(國立臺灣師範大學)
               </h3>
               <ol>
@@ -126,7 +160,7 @@
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-            <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+            <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
              國立臺中教育大學理學院 行政專員 July 2018 - Jan 2019
             </button>
           </h2>
@@ -155,7 +189,7 @@
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true" aria-controls="panelsStayOpen-collapseThree">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true" aria-controls="panelsStayOpen-collapseThree">
               國立臺中教育大學 科技部計畫 學士級研究助理 (兼任) Sep 2016 - Oct 2017
             </button>
           </h2>
@@ -184,7 +218,7 @@
       </div> -->
 
     </div>
-    <div  id="works" class="works container text-center">
+    <div  id="works" class="works container text-center  wow animate__animated animate__slideInUp">
 
       <h2 class="p-md-5">作品</h2>
       <ul class="works-nav p-md-6">
@@ -254,7 +288,7 @@
 
     </div>
 
-    <div id="autobio"  class="autobio container text-center">
+    <div id="autobio"  class="autobio container text-center  wow animate__animated animate__slideInUp">
         <h2 class="p-md-6">自傳</h2>
         <div class="accordion  container" id="accordionPanelsStayOpenExample">
           <!-- 1 -->
@@ -277,7 +311,7 @@
           <!-- 2 -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-              <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+              <button class="accordion-button  " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
                2.數位科技新認知，踏入數位學習領域
               </button>
             </h2>
@@ -295,7 +329,7 @@
           <!-- 3 -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true" aria-controls="panelsStayOpen-collapseThree">
+              <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true" aria-controls="panelsStayOpen-collapseThree">
                 3.初任行政崗位，培養謹慎、耐心、溝通力
               </button>
             </h2>
@@ -312,7 +346,7 @@
           <!-- 4 -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="panelsStayOpen-headingFour">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="true" aria-controls="panelsStayOpen-collapseFour">
+              <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="true" aria-controls="panelsStayOpen-collapseFour">
                 4.重回研究領域，規劃線上平台UI介面，提升平台易用性與學習者學習動機
               </button>
             </h2>
@@ -329,7 +363,7 @@
             <!-- 5 -->
             <div class="accordion-item">
               <h2 class="accordion-header" id="panelsStayOpen-headingFive">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="true" aria-controls="panelsStayOpen-collapseFive">
+                <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="true" aria-controls="panelsStayOpen-collapseFive">
                  5. 匯結人文與科技，創造多元跨域新視界
                 </button>
               </h2>
@@ -347,7 +381,7 @@
         
         </div>
       </div>
-    <div id="contact" class="contact container text-center pb-6">
+    <div id="contact" class="contact container text-center pb-6  wow animate__animated animate__slideInUp">
       <h2 class="p-md-6">聯絡方式</h2>
     <form action="">
       <div class="contact-items row justify-content-center text-start" >

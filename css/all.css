@@ -6,6 +6,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 @import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -12910,6 +12911,16 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+li {
+  cursor: pointer;
+}
+
+.backdrop-blur {
+  background-color: rgba(255, 255, 255, 0.575);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
 *, *::after, *::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -13134,4 +13145,30 @@ small, .small {
 .skills .material-icons-language {
   color: #7dd6cf;
   color: #FFCC00;
+}
+.skills .card {
+  outline: 1px solid red;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+.skills .card:hover {
+  -webkit-transform: rotateY(0.5turn);
+          transform: rotateY(0.5turn);
+}
+.skills .card .back {
+  position: absolute;
+}
+.skills .card .front {
+  z-index: 2;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.skills .card .back {
+  z-index: 1;
+  -webkit-transform: rotateY(0.5turn);
+          transform: rotateY(0.5turn);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
