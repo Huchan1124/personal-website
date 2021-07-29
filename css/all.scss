@@ -48,6 +48,8 @@ img {
 
 a {
     text-decoration: none !important;
+    color: white;
+   
 }
 
 .tri-animation-section{
@@ -237,15 +239,12 @@ small {
     }
 
     .card {
+        
         outline: 1px solid red;
         transform-style: preserve-3d;
-        transition: all 2s ;
-        &:hover {
+        transition: all .8s ease-in-out;
+        &:hover  {
             transform: rotateY(.5turn);
-        }
-
-        .back {
-          position: absolute;
         }
 
         .front {
@@ -255,9 +254,9 @@ small {
         }
 
         .back {
+            position: absolute;
             z-index: 1;
             transform: rotateY(.5turn);
-            backface-visibility: hidden;
 
         }
 
@@ -267,7 +266,78 @@ small {
    
 
 }
+
+
+.works-items {
+    .card {
+        // outline: brown 1px solid;
+        position: relative;
+        border: none;
+        padding: 10px;
+        color: white;
+
+        img {
+            display: block;
+            object-fit: cover;
+        }
+
+
+     
+      .card-body{
+        // outline: red 1px solid;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        transition: all .9s;
+        opacity: 0;
+
+        &:hover {
+        background-color: rgba(0, 0, 0, 0.651);
+        backdrop-filter: blur(2px);
+        opacity: 1;
+        top: 10px;
+        bottom: 10px;
+        right: 10px;
+        left: 10px;
+      
+        
+
+        }
+
+        a {
+            &:hover {
+                color: white;
+                
+
+                .card-title {
+                  
+                    font-size: 2rem;
+
+                }
+                
+            }
+        }
+     
+     }
+
+     .card-title{
+            
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all .5s ease-in-out;
+
+        
+    } 
     
+  
+        
+    }
+}
   
 
    

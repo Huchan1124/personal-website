@@ -39,3 +39,16 @@ setInterval(createTriangle,150);
 
 
 new WOW().init();
+
+
+// $(document).ready(function () {
+//     $(".card").hover(function () {
+//         $(this).stop(true,true)
+//             // over
+            
+//         }, function () {
+//             $(this).stop(true,true)
+//             // out
+//         }
+//     );
+// });
