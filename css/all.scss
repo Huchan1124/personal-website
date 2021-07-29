@@ -48,7 +48,7 @@ img {
 
 a {
     text-decoration: none !important;
-    color: white;
+  
    
 }
 
@@ -275,11 +275,9 @@ small {
         border: none;
         padding: 10px;
         color: white;
-
-        img {
-            display: block;
-            object-fit: cover;
-        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
 
      
@@ -308,13 +306,11 @@ small {
         }
 
         a {
+            color: white;
             &:hover {
-                color: white;
-                
-
                 .card-title {
-                  
-                    font-size: 2rem;
+                    font-size: 1.8rem;
+                    
 
                 }
                 
@@ -329,7 +325,7 @@ small {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        transition: all .5s ease-in-out;
+        transition: all .5s ease;
 
         
     } 

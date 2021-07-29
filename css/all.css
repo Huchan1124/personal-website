@@ -12951,7 +12951,6 @@ img {
 
 a {
   text-decoration: none !important;
-  color: white;
 }
 
 .tri-animation-section {
@@ -13175,11 +13174,15 @@ small, .small {
   border: none;
   padding: 10px;
   color: white;
-}
-.works-items .card img {
-  display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .works-items .card .card-body {
   padding: 0;
@@ -13202,11 +13205,11 @@ small, .small {
   right: 10px;
   left: 10px;
 }
-.works-items .card .card-body a:hover {
+.works-items .card .card-body a {
   color: white;
 }
 .works-items .card .card-body a:hover .card-title {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 .works-items .card .card-title {
   position: absolute;
@@ -13214,6 +13217,6 @@ small, .small {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
