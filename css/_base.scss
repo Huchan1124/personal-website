@@ -1,0 +1,56 @@
+*,*::after,*::before {
+    box-sizing: border-box;
+    
+   
+}
+
+html {
+    overflow-y: scroll;
+  }
+  
+  :root {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  
+  :root body {
+    position: absolute;
+  }
+  
+  body {
+    width: 100vw;
+    overflow: hidden;
+  
+   
+
+   
+  }
+
+
+
+img {
+    width: 100%;
+    height:auto;
+}
+
+
+a {
+    text-decoration: none !important;
+  
+   
+}
+
+li {
+    cursor: pointer;
+    
+}
+
+.backdrop-blur {
+    background-color: rgba(255, 255, 255, 0.575);
+    backdrop-filter: blur(10px);
+  }
+
+
+  .accordion-button {
+    text-shadow: 1px 1px 2px rgba(150, 150, 150, 0.76);
+  }

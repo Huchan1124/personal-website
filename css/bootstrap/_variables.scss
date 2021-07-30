@@ -67,7 +67,7 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary:       #636363 !default;
+$primary:       #5a5a5a !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -75,6 +75,9 @@ $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
+$accord:         #4093bd;
+$accord2:         #F78FB3;
+$accord3:         #59b4ad;   //#3cb4a1
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -86,7 +89,10 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
+  "accord":     $accord,
+  "accord2":    $accord2,
+  "accord3":    $accord3
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -290,7 +296,7 @@ $body-text-align:           null !default;
 $link-color:                              $primary !default;
 $link-decoration:                         underline !default;
 $link-shade-percentage:                   20% !default;
-$link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
+$link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default; 
 $link-hover-decoration:                   null !default;
 
 $stretched-link-pseudo-element:           after !default;
@@ -856,7 +862,7 @@ $form-range-thumb-transition:              background-color .15s ease-in-out, bo
 // scss-docs-start form-file-variables
 $form-file-button-color:          $input-color !default;
 $form-file-button-bg:             $input-group-addon-bg !default;
-$form-file-button-hover-bg:       shade-color($form-file-button-bg, 5%) !default;
+$form-file-button-hover-bg:       shade-color($form-file-button-bg, 5%) !default; 
 // scss-docs-end form-file-variables
 
 // scss-docs-start form-floating-variables

@@ -1,4 +1,4 @@
-
+//background animation
 const colors = [
     '#95cffc',
     '#f78fb3',
@@ -38,17 +38,13 @@ function createTriangle(){
 setInterval(createTriangle,150);
 
 
+//wow js
 new WOW().init();
 
 
-// $(document).ready(function () {
-//     $(".card").hover(function () {
-//         $(this).stop(true,true)
-//             // over
-            
-//         }, function () {
-//             $(this).stop(true,true)
-//             // out
-//         }
-//     );
-// });
+// formspree clear submission
+window.onbeforeunload = () => {
+    for(const form of document.getElementsByTagName('form')) {
+      form.reset();
+    }
+  }
