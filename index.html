@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=
+    <meta name="viewport" content="width=device-width
     , initial-scale=1.0">
+
+    
     <title>Huchan's Portfolio</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -220,26 +222,18 @@
         </div>
       </div>
 
-
-      <!-- <div class="position-relative m-4">
-        <div class="progress" style="height: 500px; width: 1px;background: #000;">
-        </div>
-        <button type="button" class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">1</button>
-        <button type="button" class="position-absolute top-50 start-0 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">2</button>
-        <button type="button" class="position-absolute top-100 start-0 translate-middle btn btn-sm btn-secondary rounded-pill" style="width: 2rem; height:2rem;">3</button>
-      </div> -->
-
     </div>
     <div  id="works" class="p-md-6 works container text-center  wow animate__animated animate__slideInUp">
       <h2 class="pt-md-3  fw-bolder">作品</h2>
       <ul class="works-nav p-md-5">
-        <li class="btn border rounded-pill fw-bolder works-all " ><a href="" >全部作品</a></li>
-        <li class="btn border rounded-pill fw-bolder works-website" ><a href="" >網頁作品</a></li>
-        <li class="btn border rounded-pill fw-bolder works-creative"><a href="" >應用創作</a></li>
-        <li class="btn border rounded-pill fw-bolder works-video"><a href="" >影片作品</a></li>
+        <li class="btn border rounded-pill fw-bolder works-all js-worksAllBtn " id="全部作品" >全部作品</li>
+        <li class="btn border rounded-pill fw-bolder works-website js-worksWebsiteBtn" id="網頁作品" >網頁作品</li>
+        <li class="btn border rounded-pill fw-bolder works-creative  js-worksCreativeBtn" id="應用創作" >應用創作</li>
+        <li class="btn border rounded-pill fw-bolder works-edugame js-worksEduGameBtn" id="教育遊戲">教育遊戲</li>
+        <li class="btn border rounded-pill fw-bolder works-video  js-worksVideoBtn " id="影像作品">影像作品</li>
       </ul>
       <div class="container">
-      <div class="works-items row justify-content-evenly">
+      <div class="works-items row  js-worksContainer">
 
 
         <div class="card col-12  col-md-4 mb-md-3" >

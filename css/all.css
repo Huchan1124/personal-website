@@ -13481,23 +13481,21 @@ small, .small {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   background: #6e6e6e;
-}
-.works-nav .works-all a {
   color: white;
-  text-shadow: 1px 1px 2px #969696;
 }
 .works-nav .works-all:hover {
   background: rgba(177, 177, 177, 0.856);
+  text-shadow: 1px 1px 2px #969696;
 }
-.works-nav .works-website, .works-nav .works-creative, .works-nav .works-video {
+.works-nav .works-website, .works-nav .works-creative, .works-nav .works-video, .works-nav .works-edugame {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   background: rgba(230, 230, 230, 0.849);
 }
-.works-nav .works-website:hover, .works-nav .works-creative:hover, .works-nav .works-video:hover {
+.works-nav .works-website:hover, .works-nav .works-creative:hover, .works-nav .works-video:hover, .works-nav .works-edugame:hover {
   background: #b1b1b1;
 }
-.works-nav .works-website:hover a, .works-nav .works-creative:hover a, .works-nav .works-video:hover a {
+.works-nav .works-website:hover a, .works-nav .works-creative:hover a, .works-nav .works-video:hover a, .works-nav .works-edugame:hover a {
   color: white;
   text-shadow: 1px 1px 2px #969696;
 }

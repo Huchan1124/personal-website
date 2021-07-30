@@ -48,3 +48,167 @@ window.onbeforeunload = () => {
       form.reset();
     }
   }
+
+
+//worksBtn change
+let workData = [
+  {
+    "id": 0,
+    "title": "電幻迷鐘",
+    "imgUrl": "./img/digital-clock.gif",
+    "url":"http://220.128.133.15/s1100211/front_end/digital_clock/",
+    "tag": "應用創作",
+},
+{
+
+  "id": 1,
+  "title": '童趣"暱"境',
+  "imgUrl": "./img/name-animation.gif",
+  "url":"http://220.128.133.15/s1100211/front_end/createTriangleAnimation/",
+  "tag": "應用創作",
+},
+{
+    "id": 2,
+    "title": "萬年To-Do List",
+    "imgUrl": "img/calendar.gif",
+    "url":"http://220.128.133.15/s1100211/back_end/calendar/",
+    "tag": "應用創作",
+    
+},
+{
+  "id": 3,
+  "title": "3D旋轉賀卡",
+  "imgUrl": "./img/dadbirthday.gif",
+  "url":"https://huchan1124.github.io/birthday_card_for_dad/",
+  "tag": "應用創作",
+},
+{
+  "id": 4,
+  "title": "《星空與詩歌-探索米羅的藝術世界》DEMO1",
+  "imgUrl": "./img/miro-game01.gif",
+  "url":"https://www.youtube.com/watch?v=rRjvh0yf670",
+  "tag": "教育遊戲",
+},
+{
+  "id": 5,
+  "title": "《星空與詩歌-探索米羅的藝術世界》DEMO2",
+  "imgUrl": "./img/miro-game2.gif",
+  "url":"https://www.youtube.com/watch?v=SRFdkVYZ6NY&feature=youtu.be",
+  "tag": "教育遊戲",
+},
+{
+  "id": 6,
+  "title": "《聲韻覺識數位遊戲 - 注音王國大冒險》DEMO",
+  "imgUrl": "./img/chinesegame.gif",
+  "url":"https://www.youtube.com/watch?v=UEVAddeOIzI",
+  "tag": "教育遊戲",
+},
+{
+  "id": 7,
+  "title": "2016清大中文畢業公演《無照愛人》前導片",
+  "imgUrl": "./img/2016.gif",
+  "url":"https://www.youtube.com/watch?v=L_SREsT71U8",
+  "tag": "影像作品",
+},
+{
+  "id": 8,
+  "title": "2016清大中文畢業公演《無照愛人》MV(衝突篇)",
+  "imgUrl": "./img/2016MV.gif",
+  "url":"https://www.youtube.com/watch?v=PcTtAk5tmwI&t=15s",
+  "tag": "影像作品",
+},
+{
+  "id": 9,
+  "title": "《限時備忘——2016清大中文系畢業專刊》預購宣傳片",
+  "imgUrl": "./img/2016book.gif",
+  "url":"https://www.youtube.com/watch?v=re6ERd9iYmU",
+  "tag": "影像作品",
+}
+
+];
+
+const worksContainer =  document.querySelector(".js-worksContainer");
+const worksAllBtn =  document.querySelector(".js-worksAllBtn");
+const worksWebsiteBtn =  document.querySelector(".js-worksWebsiteBtn");
+const worksCreativeBtn =  document.querySelector(".js-worksCreativeBtn");
+const worksEduGameBtn =  document.querySelector(".js-worksEduGameBtn");
+const worksVideoBtn =  document.querySelector(".js-worksVideoBtn");
+
+worksAllBtn.addEventListener("click", (e)=>{
+  let content = "";
+  workData.forEach((item)=>{
+    content += ` <div class="card col-12  col-md-4 mb-md-3" >
+    <img src="${item.imgUrl}" class=" img-fluid "  >
+    <div class="card-body">
+      <a href="${item.url}" target="_blank"><h5 class="card-title">${item.title}</h5></a>
+    </div>
+  </div>`;
+  })
+  worksContainer.innerHTML = content;
+
+})
+
+worksWebsiteBtn.addEventListener("click", (e)=>{
+  let content = "";
+  workData.forEach((item)=>{
+   if (item.tag === e.target.id){
+     content += ` <div class="card col-12  col-md-4 mb-md-3" >
+    <img src="${item.imgUrl}" class=" img-fluid "  >
+    <div class="card-body">
+      <a href="${item.url}" target="_blank"><h5 class="card-title">${item.title}</h5></a>
+    </div>
+  </div>`;
+   }
+  })
+  worksContainer.innerHTML = content;
+ 
+ })
+
+worksCreativeBtn.addEventListener("click", (e)=>{
+   let content = "";
+   workData.forEach((item)=>{
+    if (item.tag === e.target.id){
+      content += ` <div class="card col-12  col-md-4 mb-md-3" >
+     <img src="${item.imgUrl}" class=" img-fluid "  >
+     <div class="card-body">
+       <a href="${item.url}" target="_blank"><h5 class="card-title">${item.title}</h5></a>
+     </div>
+   </div>`;
+    }
+   })
+   worksContainer.innerHTML = content;
+  
+  })
+
+worksEduGameBtn.addEventListener("click", (e)=>{
+    let content = "";
+    workData.forEach((item)=>{
+     if (item.tag === e.target.id){
+       content += ` <div class="card col-12  col-md-4 mb-md-3" >
+      <img src="${item.imgUrl}" class=" img-fluid "  >
+      <div class="card-body">
+        <a href="${item.url}" target="_blank"><h5 class="card-title">${item.title}</h5></a>
+      </div>
+    </div>`;
+     }
+    })
+    worksContainer.innerHTML = content;
+   
+   })
+
+  
+worksVideoBtn.addEventListener("click", (e)=>{
+    let content = "";
+    workData.forEach((item)=>{
+     if (item.tag === e.target.id){
+       content += ` <div class="card col-12  col-md-4 mb-md-3" >
+      <img src="${item.imgUrl}" class=" img-fluid "  >
+      <div class="card-body">
+        <a href="${item.url}" target="_blank"><h5 class="card-title">${item.title}</h5></a>
+      </div>
+    </div>`;
+     }
+    })
+    worksContainer.innerHTML = content;
+   
+   })

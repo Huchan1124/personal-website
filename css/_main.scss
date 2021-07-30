@@ -78,15 +78,14 @@
     .works-all {
     transition: all .5s ease;
     background: rgb(110, 110, 110);
-     a {
-        color: white;
-        text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
-     }
+    color: white;
+   
     &:hover {
         background:rgba(177, 177, 177, 0.856);
+        text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
      }
         }
-    .works-website,.works-creative, .works-video {
+    .works-website,.works-creative, .works-video, .works-edugame {
     transition: all .5s ease;
     background:rgba(230, 230, 230, 0.849);
         &:hover {
