@@ -13240,16 +13240,12 @@ body {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
 a {
   text-decoration: none !important;
-}
-
-li {
-  cursor: pointer;
 }
 
 .backdrop-blur {
@@ -13260,6 +13256,10 @@ li {
 
 .accordion-button {
   text-shadow: 1px 1px 2px rgba(150, 150, 150, 0.76);
+}
+
+.fz-12 {
+  font-size: 12px;
 }
 
 .tri-animation-section {
@@ -13437,6 +13437,17 @@ small, .small {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media (max-width: 768px) {
+  .selfIntro {
+    padding: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .selfIntro-img {
+    padding: 50px;
+  }
+}
 
 .skills .material-icons.md-160 {
   font-size: 160px;
@@ -13477,6 +13488,17 @@ small, .small {
           transform: rotateY(0.5turn);
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+}
+@media (max-width: 767px) {
+  .skills {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .skill-mobile {
+    display: none;
+  }
 }
 
 .works-nav .works-all {
