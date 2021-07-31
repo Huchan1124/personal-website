@@ -13591,7 +13591,6 @@ small, .small {
 }
 @media (max-width: 767px) {
   .login-items {
-    outline: #ff3c00 1px solid;
     width: 100%;
     padding: 50px;
   }
