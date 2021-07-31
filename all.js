@@ -159,6 +159,21 @@ const worksEduGameBtn =  document.querySelector(".js-worksEduGameBtn");
 const worksVideoBtn =  document.querySelector(".js-worksVideoBtn");
 const worksPublishBtn =  document.querySelector(".js-worksPublishBtn");
 
+function init(){
+  let content = "";
+  workData.forEach((item)=>{
+    content += ` <div class="card col-12  col-md-4 mb-md-3" >
+    <img src="${item.imgUrl}" class=" img-fluid "  >
+    <div class="card-body">
+      <a href="${item.url}" target="_blank"><h5 class="card-title">${item.title}</h5></a>
+    </div>
+  </div>`;
+  })
+  worksContainer.innerHTML = content;
+}
+
+init()
+
 worksAllBtn.addEventListener("click", (e)=>{
   let content = "";
   workData.forEach((item)=>{
@@ -172,8 +187,6 @@ worksAllBtn.addEventListener("click", (e)=>{
   worksContainer.innerHTML = content;
 
 })
-
-
 
 worksWebsiteBtn.addEventListener("click", (e)=>{
   let content = "";
