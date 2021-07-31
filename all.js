@@ -82,48 +82,72 @@ let workData = [
   "url":"https://huchan1124.github.io/birthday_card_for_dad/",
   "tag": "應用創作",
 },
+
 {
   "id": 4,
+  "title": "募資網站切版練習",
+  "imgUrl": "./img/layoutpractice1.PNG",
+  "url":"https://huchan1124.github.io/practice_assignments/Bootstrap5_practice_2021.06/index.html",
+  "tag": "切版習作",
+},
+{
+  "id": 5,
   "title": "《星空與詩歌-探索米羅的藝術世界》DEMO1",
   "imgUrl": "./img/miro-game01.gif",
   "url":"https://www.youtube.com/watch?v=rRjvh0yf670",
   "tag": "教育遊戲",
 },
 {
-  "id": 5,
+  "id": 6,
   "title": "《星空與詩歌-探索米羅的藝術世界》DEMO2",
   "imgUrl": "./img/miro-game2.gif",
   "url":"https://www.youtube.com/watch?v=SRFdkVYZ6NY&feature=youtu.be",
   "tag": "教育遊戲",
 },
 {
-  "id": 6,
+  "id": 7,
   "title": "《聲韻覺識數位遊戲 - 注音王國大冒險》DEMO",
   "imgUrl": "./img/chinesegame.gif",
   "url":"https://www.youtube.com/watch?v=UEVAddeOIzI",
   "tag": "教育遊戲",
 },
 {
-  "id": 7,
+  "id": 8,
   "title": "2016清大中文畢業公演《無照愛人》前導片",
   "imgUrl": "./img/2016.gif",
   "url":"https://www.youtube.com/watch?v=L_SREsT71U8",
   "tag": "影像作品",
 },
 {
-  "id": 8,
+  "id": 9,
   "title": "2016清大中文畢業公演《無照愛人》MV(衝突篇)",
   "imgUrl": "./img/2016MV.gif",
   "url":"https://www.youtube.com/watch?v=PcTtAk5tmwI&t=15s",
   "tag": "影像作品",
 },
 {
-  "id": 9,
+  "id": 10,
   "title": "《限時備忘——2016清大中文系畢業專刊》預購宣傳片",
   "imgUrl": "./img/2016book.gif",
   "url":"https://www.youtube.com/watch?v=re6ERd9iYmU",
   "tag": "影像作品",
-}
+},
+{
+  "id": 11,
+  "title": "精進探究的基礎\：\ 教育研究法課程的教學創新歷程",
+  "imgUrl": "./img/publish1.PNG",
+  "url":"https://tppi.ntue.edu.tw/Journal/Content/45",
+  "tag": "學術發表",
+},
+
+{
+  "id": 12,
+  "title": "聽音習字 \:\ 聲韻覺識理論融入數位遊戲輔助學童注音符號學習成效之研究",
+  "imgUrl": "./img/publish2.PNG",
+  "url":"https://drive.google.com/file/d/1vC8pBibYPnL1Nd_4tRV3NfOXP6BS2ztK/view?usp=sharing",
+  "tag": "學術發表",
+},
+
 
 ];
 
@@ -133,6 +157,7 @@ const worksWebsiteBtn =  document.querySelector(".js-worksWebsiteBtn");
 const worksCreativeBtn =  document.querySelector(".js-worksCreativeBtn");
 const worksEduGameBtn =  document.querySelector(".js-worksEduGameBtn");
 const worksVideoBtn =  document.querySelector(".js-worksVideoBtn");
+const worksPublishBtn =  document.querySelector(".js-worksPublishBtn");
 
 worksAllBtn.addEventListener("click", (e)=>{
   let content = "";
@@ -147,6 +172,8 @@ worksAllBtn.addEventListener("click", (e)=>{
   worksContainer.innerHTML = content;
 
 })
+
+
 
 worksWebsiteBtn.addEventListener("click", (e)=>{
   let content = "";
@@ -196,8 +223,23 @@ worksEduGameBtn.addEventListener("click", (e)=>{
    
    })
 
-  
 worksVideoBtn.addEventListener("click", (e)=>{
+    let content = "";
+    workData.forEach((item)=>{
+     if (item.tag === e.target.id){
+       content += ` <div class="card col-12  col-md-4 mb-md-3" >
+      <img src="${item.imgUrl}" class=" img-fluid "  >
+      <div class="card-body">
+        <a href="${item.url}" target="_blank"><h5 class="card-title">${item.title}</h5></a>
+      </div>
+    </div>`;
+     }
+    })
+    worksContainer.innerHTML = content;
+   
+   })
+   
+worksPublishBtn.addEventListener("click", (e)=>{
     let content = "";
     workData.forEach((item)=>{
      if (item.tag === e.target.id){

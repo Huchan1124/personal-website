@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+
 *,*::after,*::before {
     box-sizing: border-box;
+
     
-   
 }
 
 html {
@@ -21,9 +24,6 @@ html {
     width: 100vw;
     overflow: hidden;
   
-   
-
-   
   }
 
 
@@ -51,6 +51,6 @@ li {
   }
 
 
-  .accordion-button {
+.accordion-button {
     text-shadow: 1px 1px 2px rgba(150, 150, 150, 0.76);
   }

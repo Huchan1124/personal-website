@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width
     , initial-scale=1.0">
-
-    
     <title>Huchan's Portfolio</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -14,13 +12,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     >
-
-
-
     <link rel="stylesheet" href="./css/all.css">
 </head>
 <body >
-  <section class="tri-animation-section"> 
+  <section class="tri-animation-section"></section>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fw-bolder">
         <div class=" container ">
           <div>
@@ -90,7 +85,7 @@
       </div>
     </div>
     <div id="skills" class="skills pb-md-7  container text-center fw-bolder wow animate__animated animate__slideInUp ">
-      <h2 class="p-md-5 fw-bolder">技能</h2>
+      <h2 class="p-5 p-md-5 fw-bolder">技能</h2>
         <div class="skills-container ">
           <ul class="row list-unstyled justify-content-evenly ">
             <!-- 1 -->
@@ -100,14 +95,22 @@
                   code
                   </span>
                 <h3 class="fw-bolder">程式</h3>
-                <p class="h6 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, eveniet. </p>
+                <ul class="h6 text-start">
+                  <li>具HTML、CSS、javaScript基礎技能。</li>
+                  <li>具SCSS撰寫能力。</li>
+                  <li>具原生CSS進行RWD切版與Bootstrap框架使用經驗。</li>
+                </ul>
+              
               </div>
               <div class="back">
                 <span class="material-icons material-icons-computer md-160 " >
                   code
                   </span>
                 <h3 class="fw-bolder">程式背面</h3>
-                <p class="h6 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, eveniet. </p>
+                <ul class="h6 text-start">
+                  <li>具AJAX技術串接RESTful API 經驗。</li>
+                  <li>具Git相關版控工具使用經驗。</li>
+                </ul>
               </div>
             </li>
             <!-- 2 -->
@@ -117,14 +120,22 @@
                 travel_explore
                 </span>
               <h3 class="fw-bolder">研究</h3>
-              <p class="h6 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, eveniet. </p>
+              <ul class="h6 text-start">
+                <li>國內外文獻搜索與彙整。</li>
+                <li>獨力進行研究設計、專案管理、
+                  研究執行與成果報告撰寫。</li>
+              </ul>
               </div>
               <div class="back">
                 <span class="material-icons material-icons-research md-150 " >
                   travel_explore
                   </span>
                 <h3 class="fw-bolder">研究背面</h3>
-                <p class="h6 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, eveniet. </p>
+                <ul class="h6 text-start">
+                  <li>國內外文獻搜索與彙整。</li>
+                  <li>獨力進行研究設計、專案管理、
+                    研究執行與成果報告撰寫。</li>
+                </ul>
               </div>
             </li>
             <!-- 3 -->
@@ -134,7 +145,10 @@
                 translate
                 </span>
               <h3 class="fw-bolder">語言</h3>
-              <p class="h6 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, eveniet. </p>
+              <ul class="h6 text-start">
+                <li>英語: TOEIC 830</li>
+                <li>日語: N3</li>
+              </ul>
               </div>
               <div class="back">
                 <span class="material-icons material-icons-language md-160 " >
@@ -149,7 +163,7 @@
         </div>
     </div>
     <div id="workExp"  class="p-md-6  workExp container text-center  wow animate__animated animate__slideInUp">
-      <h2 class="pt-md-3 pb-md-5 fw-bolder">工作經歷</h2>
+      <h2 class="p-5 pt-md-3 pb-md-5 fw-bolder">工作經歷</h2>
       <div class="accordion  container " id="accordionPanelsStayOpenExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="panelsStayOpen-headingOne">
@@ -224,13 +238,15 @@
 
     </div>
     <div  id="works" class="p-md-6 works container text-center  wow animate__animated animate__slideInUp">
-      <h2 class="pt-md-3  fw-bolder">作品</h2>
-      <ul class="works-nav p-md-5">
-        <li class="btn border rounded-pill fw-bolder works-all js-worksAllBtn " id="全部作品" >全部作品</li>
-        <li class="btn border rounded-pill fw-bolder works-website js-worksWebsiteBtn" id="網頁作品" >網頁作品</li>
-        <li class="btn border rounded-pill fw-bolder works-creative  js-worksCreativeBtn" id="應用創作" >應用創作</li>
-        <li class="btn border rounded-pill fw-bolder works-edugame js-worksEduGameBtn" id="教育遊戲">教育遊戲</li>
-        <li class="btn border rounded-pill fw-bolder works-video  js-worksVideoBtn " id="影像作品">影像作品</li>
+      <h2 class="p-5 pt-md-3  fw-bolder">作品</h2>
+      <ul class="works-nav  p-md-5">
+        <li class="mb-3 btn border rounded-pill fw-bolder works-all js-worksAllBtn " id="全部作品" >全部作品</li>
+        <li class="mb-3 btn border rounded-pill fw-bolder works-creative  js-worksCreativeBtn" id="應用創作" >應用創作</li>
+        <li class="mb-3 btn border rounded-pill fw-bolder works-website js-worksWebsiteBtn" id="切版習作" >切版習作</li>
+        <li class="mb-3 btn border rounded-pill fw-bolder works-edugame js-worksEduGameBtn" id="教育遊戲">教育遊戲</li>
+        <li class="mb-3 btn border rounded-pill fw-bolder works-video  js-worksVideoBtn " id="影像作品">影像作品</li>
+        <li class="mb-3 btn border rounded-pill fw-bolder works-publish  js-worksPublishBtn " id="學術發表">學術發表</li>
+        
       </ul>
       <div class="container">
       <div class="works-items row  js-worksContainer">
@@ -261,6 +277,13 @@
           <img src="./img/dadbirthday.gif" class=" img-fluid" >
           <div class="card-body">
             <a href="https://huchan1124.github.io/birthday_card_for_dad/" target="_blank"><h5 class="card-title">3D旋轉賀卡</h5></a>
+          </div>
+        </div>
+
+        <div class="card col-12  col-md-4 mb-md-3" >
+          <img src="./img/layoutpractice1.PNG" class=" img-fluid" >
+          <div class="card-body">
+            <a href="https://huchan1124.github.io/practice_assignments/Bootstrap5_practice_2021.06/index.html" target="_blank"><h5 class="card-title">募資網站切版練習</h5></a>
           </div>
         </div>
       
@@ -308,6 +331,22 @@
           </div>
         </div>
 
+        <div class="card col-12  col-md-4 mb-md-3" >
+          <img src="./img/publish1.PNG" class=" img-fluid" >
+          <div class="card-body">
+            <a href="https://tppi.ntue.edu.tw/Journal/Content/45" target="_blank"><h5 class="card-title">精進探究的基礎：
+              教育研究法課程的教學創新歷程</h5></a>
+          </div>
+        </div>
+
+        <div class="card col-12  col-md-4 mb-md-3" >
+          <img src="./img/publish2.PNG" class=" img-fluid" >
+          <div class="card-body">
+            <a href="https://drive.google.com/file/d/1vC8pBibYPnL1Nd_4tRV3NfOXP6BS2ztK/view?usp=sharing" target="_blank"><h5 class="card-title">聽音習字:聲韻覺識理論融入數位遊戲
+              輔助學童注音符號學習成效之研究</h5></a>
+          </div>
+        </div>
+
 
       </div>
       
@@ -316,7 +355,7 @@
     </div>
 
     <div id="autobio"  class="p-md-6 autobio container text-center  wow animate__animated animate__slideInUp">
-        <h2 class="pt-md-3 pb-md-5 fw-bolder">自傳</h2>
+        <h2 class="p-5 pt-md-3 pb-md-5 fw-bolder">自傳</h2>
         <div class="accordion  container" id="accordionPanelsStayOpenExample">
           <!-- 1 -->
           <div class="accordion-item ">
@@ -409,7 +448,7 @@
         </div>
       </div>
     <div id="contact" class="p-md-6 contact container text-center    wow animate__animated animate__slideInUp">
-      <h2 class="pt-md-3 pb-md-5 fw-bolder">聯絡方式</h2>
+      <h2 class="p-5 pt-md-3 pb-md-5 fw-bolder">聯絡方式</h2>
     <form   action="https://formspree.io/f/xgernakv"
     method="POST">
       <div class="contact-items row justify-content-center text-start" >
@@ -428,7 +467,7 @@
       </div>
 
       <div class="mb-3 ">
-        <button type="submit" class="col-9 col-md-12 submitBtn js-submitBtn btn btn-primary ">送出</button>
+        <button type="submit" class="col-12  submitBtn js-submitBtn btn btn-primary ">送出</button>
       </div>
 
      
@@ -441,7 +480,7 @@
      
 
       
-       </section>
+      
       
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
