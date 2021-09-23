@@ -13248,6 +13248,10 @@ a {
   text-decoration: none !important;
 }
 
+.card {
+  cursor: pointer;
+}
+
 .backdrop-blur {
   background-color: rgba(255, 255, 255, 0.575);
   -webkit-backdrop-filter: blur(10px);
@@ -13426,10 +13430,33 @@ small, .small {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: -5%;
-  height: 30px;
+  bottom: -10%;
+  height: 25px;
   border: 0.5px solid #000;
   background: #000;
+  -webkit-animation: lineChange 1.5s infinite;
+          animation: lineChange 1.5s infinite;
+}
+
+@-webkit-keyframes lineChange {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 25px;
+  }
+}
+
+@keyframes lineChange {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 25px;
+  }
+}
+.header {
+  margin-top: 56px;
 }
 
 .selfIntro .row {
@@ -13469,8 +13496,8 @@ small, .small {
 .skills .card {
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  -webkit-transition: all 0.8s ease-in-out;
-  transition: all 0.8s ease-in-out;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 .skills .card:hover {
   -webkit-transform: rotateY(0.5turn);
@@ -13582,6 +13609,10 @@ small, .small {
 }
 .submitBtn:hover {
   background-color: #66a2d4d7;
+}
+
+.footer {
+  height: 50px;
 }
 
 .login {
