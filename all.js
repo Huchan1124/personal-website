@@ -53,23 +53,32 @@ window.onbeforeunload = () => {
 
 //worksBtn change
 let workData = [
+
 {
-  "id": 0,
+    "id": 0,
+    "title": "虛擬博物館 Landing Page",
+    "imgUrl": "./img/layoutpractice1.PNG",
+    "url":"https://huchan1124.github.io/Virtual-Museum/",
+    "tag": "切版作品",
+},
+{
+  "id": 1,
+  "title": '童趣"暱"境',
+  "imgUrl": "./img/name-animation.gif",
+  "url":"http://220.128.133.15/s1100211/front_end/createTriangleAnimation/",
+  "tag": "應用創作",
+  },
+{ 
+   
+  "id": 2,
   "title": "電幻迷鐘",
   "imgUrl": "./img/digital-clock.gif",
   "url":"http://220.128.133.15/s1100211/front_end/digital_clock/",
   "tag": "應用創作",
 },
-{
 
-"id": 1,
-"title": '童趣"暱"境',
-"imgUrl": "./img/name-animation.gif",
-"url":"http://220.128.133.15/s1100211/front_end/createTriangleAnimation/",
-"tag": "應用創作",
-},
 {
-  "id": 2,
+  "id": 3,
   "title": "萬年To-Do List",
   "imgUrl": "img/calendar.gif",
   "url":"http://220.128.133.15/s1100211/back_end/calendar/",
@@ -77,20 +86,13 @@ let workData = [
   
 },
 {
-"id": 3,
+"id": 4,
 "title": "3D旋轉賀卡",
 "imgUrl": "./img/dadbirthday.gif",
 "url":"https://huchan1124.github.io/birthday_card_for_dad/",
 "tag": "應用創作",
 },
 
-{
-"id": 4,
-"title": "募資網站切版練習",
-"imgUrl": "./img/layoutpractice1.PNG",
-"url":"https://huchan1124.github.io/practice_assignments/Bootstrap5_practice_2021.06/index.html",
-"tag": "切版習作",
-},
 {
 "id": 5,
 "title": "《星空與詩歌-探索米羅的藝術世界》DEMO1",
