@@ -13506,8 +13506,8 @@ small, .small {
 .skills .card {
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  -webkit-transition: all 0.18s ease;
-  transition: all 0.18s ease;
+  -webkit-transition: all 0.12s ease;
+  transition: all 0.12s ease;
 }
 .skills .card:hover {
   -webkit-transform: rotateY(0.5turn);
