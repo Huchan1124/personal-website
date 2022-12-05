@@ -53,14 +53,14 @@ window.onbeforeunload = () => {
 
 //worksBtn change
 let workData = [
-
-{
+  {
     "id": 0,
-    "title": "虛擬博物館 Landing Page",
-    "imgUrl": "./img/layoutpractice1.PNG",
-    "url":"https://huchan1124.github.io/Virtual-Museum/",
-    "tag": "切版作品",
+    "title": "Aframe 3D 空間",
+    "imgUrl": "./img/aframepractice.gif",
+    "url":"https://huchan1124.github.io/Aframe_practice/",
+    "tag": "應用創作",
 },
+
 {
   "id": 1,
   "title": '童趣"暱"境',
@@ -92,51 +92,58 @@ let workData = [
 "url":"https://huchan1124.github.io/birthday_card_for_dad/",
 "tag": "應用創作",
 },
+{
+  "id": 5,
+  "title": "虛擬博物館 Landing Page",
+  "imgUrl": "./img/layoutpractice1.PNG",
+  "url":"https://huchan1124.github.io/Virtual-Museum/",
+  "tag": "切版作品",
+},
 
 {
-"id": 5,
+"id": 6,
 "title": "《星空與詩歌-探索米羅的藝術世界》DEMO1",
 "imgUrl": "./img/miro-game01.gif",
 "url":"https://www.youtube.com/watch?v=rRjvh0yf670",
 "tag": "教育遊戲",
 },
 {
-"id": 6,
+"id": 7,
 "title": "《星空與詩歌-探索米羅的藝術世界》DEMO2",
 "imgUrl": "./img/miro-game2.gif",
 "url":"https://www.youtube.com/watch?v=SRFdkVYZ6NY&feature=youtu.be",
 "tag": "教育遊戲",
 },
 {
-"id": 7,
+"id": 8,
 "title": "《聲韻覺識數位遊戲 - 注音王國大冒險》DEMO",
 "imgUrl": "./img/chinesegame.gif",
 "url":"https://www.youtube.com/watch?v=UEVAddeOIzI",
 "tag": "教育遊戲",
 },
 {
-"id": 8,
+"id": 9,
 "title": "2016清大中文畢業公演《無照愛人》前導片",
 "imgUrl": "./img/2016.gif",
 "url":"https://www.youtube.com/watch?v=L_SREsT71U8",
 "tag": "影像作品",
 },
 {
-"id": 9,
+"id": 10,
 "title": "2016清大中文畢業公演《無照愛人》MV(衝突篇)",
 "imgUrl": "./img/2016MV.gif",
 "url":"https://www.youtube.com/watch?v=PcTtAk5tmwI&t=15s",
 "tag": "影像作品",
 },
 {
-"id": 10,
+"id": 11,
 "title": "《限時備忘——2016清大中文系畢業專刊》預購宣傳片",
 "imgUrl": "./img/2016book.gif",
 "url":"https://www.youtube.com/watch?v=re6ERd9iYmU",
 "tag": "影像作品",
 },
 {
-"id": 11,
+"id": 12,
 "title": "精進探究的基礎\：\ 教育研究法課程的教學創新歷程",
 "imgUrl": "./img/publish1.PNG",
 "url":"https://tppi.ntue.edu.tw/Journal/Content/45",
@@ -144,7 +151,7 @@ let workData = [
 },
 
 {
-"id": 12,
+"id": 13,
 "title": "聽音習字 \:\ 聲韻覺識理論融入數位遊戲輔助學童注音符號學習成效之研究",
 "imgUrl": "./img/publish2.PNG",
 "url":"https://drive.google.com/file/d/1vC8pBibYPnL1Nd_4tRV3NfOXP6BS2ztK/view?usp=sharing",
